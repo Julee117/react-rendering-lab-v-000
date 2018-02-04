@@ -25,8 +25,8 @@ class Animation extends React.Component {
       );
   };
 
-  componentWillUpdate(nextProps, nextState) {
-    return this.showLoadingBar();
+  componentWillUpdate() {
+    this.showLoadingBar();
   }
 
   showLoadingBar = () => {
